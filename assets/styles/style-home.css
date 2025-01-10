@@ -1,3 +1,9 @@
+.container-sessao {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
 .sessao {
   padding: 20px;
   display: flex;
