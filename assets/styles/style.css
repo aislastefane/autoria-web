@@ -5,6 +5,8 @@
 
 body {
   background-color: #fffafa;
+  display: flex;
+  justify-content: center;
 }
 
 .imagem-fundo {
@@ -63,7 +65,9 @@ body {
 .sessao {
   padding: 20px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  text-align: center;
   /* width: 60%; */
   /* height: 600px; */
   background-repeat: no-repeat;
@@ -74,6 +78,10 @@ body {
   text-shadow: 2px 2px black;
 }
 
+.sessao h1 {
+  font-size: 50px;
+}
+
 .imagem img {
   border-radius: 50%;
   width: 300px;
@@ -81,7 +89,7 @@ body {
 }
 
 .texto {
-  text-align: justify;
+  text-align: center;
   font-size: 20px;
 }
 
@@ -102,4 +110,5 @@ main {
   flex-wrap: wrap;
   padding-left: 200px;
   padding-right: 200px;
+  width: 50%;
 }
