@@ -1,21 +1,75 @@
 .discografia {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
   gap: 8px;
   margin-top: 20px;
   height: 100vh;
 }
 
+.texto-discografia {
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+}
+
 .disco {
-  width: 370px;
-  height: 170px;
-  background-color: grey;
+  width: 100%;
+  background-color: rgb(248 243 243 / 80%);
   padding: 8px;
+  border-radius: 10px;
+}
+
+.topo-disco {
+  display: flex;
 }
 
 .imagem-disco {
-  background-color: teal;
-  width: 170px;
-  height: 170px;
+  width: 140px;
+  height: 140px;
+}
+
+.imagem-disco img {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.info-disco {
+  margin-left: 8px;
+}
+
+.titulo-disco {
+  font-size: 30px;
+  font-weight: bold;
+  color: #068;
+}
+
+.ano-disco {
+  font-size: 20px;
+  color: #757575;
+}
+
+ol {
+  counter-reset: item;
+  list-style: none;
+  padding-left: 0;
+}
+
+ol li {
+  counter-increment: item;
+  margin: 5px 0;
+}
+
+ol li a {
+  text-decoration: none;
+  color: #068;
+  font-weight: bold;
+}
+
+ol li::before {
+  content: counter(item, decimal-leading-zero) ". ";
+  color: #757575;
 }
