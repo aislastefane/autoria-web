@@ -1,3 +1,17 @@
+
+
+.imagem-fundo {
+  background-image: url("/assets/img/bacuru.jpeg");
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  filter: blur(8px);
+}
+
+
+
+
+
 .discografia {
   display: flex;
   flex-direction: column;
